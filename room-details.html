@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Room Details</h1>
+    </header>
+    <main>
+        <section id="room-information">
+            <h2>Room Information</h2>
+            <p>Room Type: Deluxe Suite</p>
+            <p>Price: $250 per night</p>
+            <p>Capacity: Up to 4 guests</p>
+            <p>Description: A luxurious suite with stunning views and modern amenities.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Free Wi-Fi</li>
+                <li>Air Conditioning</li>
+                <li>Mini Bar</li>
+                <li>Flat Screen TV</li>
+                <li>Room Service</li>
+            </ul>
+        </section>
+        <section id="booking-form">
+            <h2>Booking Form</h2>
+            <form action="/submit-booking" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Resort. All rights reserved.</p>
+    </footer>
+</body>
+</html>
