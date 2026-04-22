@@ -1,46 +1,61 @@
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.navbar {
+    background-color: #333;
+    overflow: hidden;
 }
 
-body {
-    background-color: white;
-    color: grey;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.5s ease;
-}
-
-h1, h2, h3 {
-    color: blue;
-    transition: color 0.3s ease;
-}
-
-button {
-    background-color: blue;
+.navbar a {
+    float: left;
+    display: block;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: grey;
+.hero {
+    background-image: url('hero-bg.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 0 10px;
-    }
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 24px;
-    }
-    h2 {
-        font-size: 20px;
+.amenities {
+    padding: 20px;
+}
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.booking-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
